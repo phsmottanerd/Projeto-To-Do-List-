@@ -1,0 +1,157 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Helvetica, Arial, sans-serif;
+    color: #333;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../img/kaboompics_sunset-reflections-a-tranquil-coastal-journey-36025.jpg); /* Verifique o caminho da imagem */background-position: center;
+    background-size: cover;
+}
+html{
+height: 100vh;
+
+}
+
+button {
+    background-color: #fdfdfd;
+    color: #102f5e;
+    border: 2px solid #102f5e;
+    padding: 1rem2rem; /* Corrigido para um espaçamento correto */font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+
+button:hover {
+    background-color: #102f5e;
+}
+
+button:hover i {
+    color: #fff;
+}
+
+button i {
+    color: #102f5e;
+    pointer-events: none;
+    font-size: 1.4rem;
+}
+
+input, select {
+    padding: 0.25rem0.5rem;
+}
+
+.hide {
+    display: none;
+}
+
+/* Estilizando o container principal */.todo-container {
+    max-width: 450px;
+    margin: 3rem auto;
+    background-color: #fdfdfd;
+    padding: 1.5rem;
+    border-radius: 15px;
+}
+#todo-form p,
+#edit-form p{
+
+ margin-bottom: 0.5rem;
+font-weight: bold;
+}
+
+/* Estilizando o header */.todo-containerheader {
+    text-align: center;
+    padding: 01rem1rem;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Estilizando os formulários */#todo-form, #edit-form {
+    padding: 1rem;
+    border-bottom: 1px solid #ccc;
+}
+
+#todo-formp, #edit-formp {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+/* Estilizando o controle de formulário */.form-control {
+    display: flex;
+}
+
+.form-controlinput {
+    margin-right: 0.3rem;
+}
+
+/* Estilizando o botão de cancelar edição */#cancel-edit-btn {
+    margin-top: 1rem;
+}
+
+/* Estilizando a toolbar */#toolbar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+#search {
+    border-right: 1px solid #ddd;
+    padding-right: 1rem;
+    margin-right: 1rem;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+}
+#search form{
+
+    display: flex;
+
+}
+#search input{
+
+    width: 100%;
+    margin-right: 0.3rem;
+}
+#filter{
+width: 35%;
+display: flex;
+flex-direction: column;
+margin-top: 0.1rem;
+}
+#filter select{
+margin-top: 0.4rem;
+flex: 1;
+}
+/*Fazendo a lista do todo*/
+.todo{
+display:flex ;
+justify-content: space-around;
+align-items: center;
+padding: 1rem;
+border-bottom: 1px solid #ddd;
+transition: .3s;
+
+}
+.todo h3{
+flex: 1;
+font-size: 1rem;
+}
+.todo button{
+ margin-left: 0.4rem;
+
+}
+.done{
+
+background-color: #102f5e;
+    
+}
+.done h3{
+
+color:#fff;
+text-decoration: line-through;
+font-style: italic;
+
+}
